@@ -191,9 +191,9 @@ RA should complement endpoint authentication rather than replace it.
 Combining the two security measures would ensure that the introduction of attestation increases security instead of replacing one security measure by another.
 A formal representation of this requirement in the form of *composition* goal can be found in {{ID-Crisis}} for TLS 1.3 protocol.
 
-## Cryptographic Binding to Machine Identifier
+## Cryptographic Binding to Protocol-Level Identity
 
-Evidence should be cryptographically bound to the identifier provided to the machine by the infrastructure provider to prevent **diversion** attacks {{ID-Crisis}}.
+Evidence should be cryptographically bound to the peer's authenticated protocol-level identity (such as the public key within a CA-signed TLS end-entity certificate) to prevent diversion and relay attacks.
 
 ## Attestation Credential Freshness
 
